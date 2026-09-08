@@ -37,9 +37,10 @@ export function createLakeWorld(container: HTMLElement, labels: Map<string, HTML
   controls.maxPolarAngle = Math.PI * .497;
   controls.minAzimuthAngle = -.5;
   controls.maxAzimuthAngle = .55;
+  let portrait = container.clientWidth < container.clientHeight;
   const resetCamera = () => {
-    controls.target.set(-14, .1, -28);
-    camera.position.set(10, 4.2, 13);
+    controls.target.set(portrait ? -12 : -14, .1, -28);
+    camera.position.set(portrait ? 6 : 10, 4.2, portrait ? 18 : 13);
     controls.update();
   };
   resetCamera();
@@ -109,6 +110,10 @@ export function createLakeWorld(container: HTMLElement, labels: Map<string, HTML
     height = container.clientHeight;
     if (!width || !height) return;
     camera.aspect = width / height;
+    if (portrait !== (width < height)) {
+      portrait = width < height;
+      resetCamera();
+    }
     camera.updateProjectionMatrix();
     renderer.setSize(width, height);
     const pixels = renderer.getDrawingBufferSize(new THREE.Vector2());
