@@ -1,4 +1,44 @@
-# WithYou · 湖畔画面原型
+# WithYou · 与你同在
+
+寻找同频的人。WithYou 的单屏官网：暖光海边背景、手写文字 Logo，以及 Windows、macOS、Linux 平台入口。安装包尚未发布，下载按钮暂未开放。`/prototype` 保留早期 Three.js 湖景原型。
+
+本仓库仅包含网站；本地开发目录为 `E:/WithYou/web`，推送至 [edison7009/WithYou](https://github.com/edison7009/WithYou)。原生客户端独立开发。
+
+## Cloudflare Pages 自动部署
+
+在 Cloudflare 的 **Workers & Pages → 创建应用 → Pages → 连接 Git 仓库** 中选择本仓库，使用以下设置：
+
+| 设置 | 值 |
+|---|---|
+| 生产分支 | `main` |
+| 框架预设 | `None`（自定义构建） |
+| 根目录 | 留空，使用仓库根目录 |
+| 构建命令 | `npm run build` |
+| 构建输出目录 | `dist/client` |
+| Node.js | `.node-version` 指定的 `24.18.0` |
+
+Cloudflare 会安装 npm 依赖；无需设置密钥、数据库或服务器。项目使用 Vinext 静态导出，发布 `dist/client`，无需 Next.js 服务端适配器。首次连接并部署后，推送到 `main` 会触发生产站点更新；本地未提交的改动不会自动上线。参见 [Cloudflare Git 集成](https://developers.cloudflare.com/pages/configuration/git-integration/) 和 [构建配置](https://developers.cloudflare.com/pages/configuration/build-configuration/)。
+
+本地验证与更新：
+
+```sh
+npm ci
+npm run dev
+# 完成修改后
+npm run check
+npm run build
+git add <本次修改的文件>
+git commit -m "Describe the website update"
+git push origin main
+```
+
+背景与 Logo 来源、完整生成提示词见 `artwork/cozy-identity-provenance.json`；Linux 图标使用用户提供的透明 PNG。以下为历史开发记录。
+
+## 2026-09-12 本地暖光游戏风格与文字标志
+
+用户提供 Tiny Glade 网站作为氛围参考。首页改为左侧海边环境、右侧 WithYou 手绘纯文字标志与简短主题、平台入口；移除叶形图标和玻璃控制栏。新图为原创生成的柔和 3D 风格海边空地，不使用参考游戏资产。背景 `public/images/cozy-meadow.png`，透明文字标志 `public/images/withyou-wordmark.png`；完整提示词与来源信息见 `artwork/cozy-identity-provenance.json`。平台仍未提供在线下载地址。
+
+该版最初只在本地预览，随后经用户确认提交到 GitHub，供 Cloudflare Pages 部署。旧网页原型 `/prototype` 保留。
 
 ## 2026-09-12 单屏视觉重排
 
