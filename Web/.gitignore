@@ -37,6 +37,3 @@ next-env.d.ts
 /outputs/
 /work/
 *.tsbuildinfo
-
-# Local development notes and artwork provenance
-/artwork/
