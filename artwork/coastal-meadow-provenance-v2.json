@@ -1,0 +1,8 @@
+{
+  "asset": "coastal-meadow-v2.png",
+  "source": "Built-in imagegen edit of original coastal-meadow.png",
+  "dimensions": "1672x941",
+  "bytes": 2015553,
+  "sha256": "2981A2B8A36AB83813EDE82F4440AF7EF4998D9E52FBD3A7705C1C835DC0B290",
+  "prompt": "Use case: precise-object-edit.\nAsset type: painterly coastal meadow background illustration.\nInput image: E:/WithYou/work/withyou-background/coastal-meadow.png is the exact edit target, not merely a style reference.\nPrimary request: Edit ONLY the five existing tiny distant people, giving their clothes visibly varied soft colors and making three of them young adult women wearing cute casual summer clothes.\nFrom left to right: (1) the leftmost seated figure becomes a young adult woman wearing a pastel pink short-sleeved blouse and light-colored summer skirt; (2) the seated laptop person wears a light blue T-shirt, keep the laptop; (3) the reclining person wears a pale mint T-shirt; (4) the lower right seated figure becomes a young adult woman wearing a lavender summer dress; (5) the far right seated figure becomes a young adult woman wearing a warm peach short-sleeved summer outfit.\nConstraints: Preserve the EXACT landscape composition, framing, sweeping sky and clouds, sea, coastline, rocks, grass, flowers, sunlight and painterly softness. Keep all five figures in exactly their current locations, poses and tiny distant scale. Use desaturated yet visibly distinct pink, light blue, mint, lavender and peach clothing that fits the current light. Keep faces indistinct and tiny; do not increase detail or sharpen people. No extra people, no foreground characters, no text, no UI, no logos. Keep the original wide aspect ratio.\r\n"
+}

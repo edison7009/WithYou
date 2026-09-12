@@ -1,5 +1,9 @@
 # WithYou · 湖畔画面原型
 
+## 2026-09-12 单屏下载首页
+
+首页仅保留横排图标＋WithYou、主题“与你同在／寻找同频的人”和 Windows／macOS／Linux 半透明平台入口。移除副标、介绍段落、故事锚点、活动列表与页脚，旧 `/prototype` 保留。尚无有效在线安装包链接，三平台使用 disabled 按钮并明确标注“即将开放”，不提供假下载。背景改用 `public/images/coastal-meadow-v2.png`，五位小人物采用不同颜色的 T 恤和夏装，三位女性，原构图保留。完整编辑提示词在 `artwork/coastal-meadow-prompt-v2.txt`。原生仍通过稳定资产名加载该版本。
+
 ## 2026-09-12 当前首页：WithYou 介绍页
 
 `/` 现在是共用草海背景的品牌介绍页，包含首屏与草地来信、五类日常活动和真实开发状态。`/prototype` 保留下面记录的历史 Three.js 原型。首页背景为 `public/images/coastal-meadow.png`，与原生序章同一张 1672×941 原创生成插画；来源与完整提示词见 `artwork/`。未复制参考站 blume.codes 的素材、文案或实现。没有公开下载链接或真实多人数据。
