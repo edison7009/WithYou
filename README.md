@@ -1,5 +1,9 @@
 # WithYou · 湖畔画面原型
 
+## 2026-09-12 单屏视觉重排
+
+保留 WithYou 和两句主题，改为暖白标题、舒展字号及一条统一的半透明平台栏；下载未开放提示合并为一行。背景第三版改为更概括的插画色块、简化草叶与海面高光，五位年轻人采用宽松 T 恤、短款上衣、阔腿裤等现代日常穿搭。仍无真实下载地址。源图 `public/images/coastal-meadow-v3.png`，完整提示词见 `artwork/coastal-meadow-prompt-v3.txt`。
+
 ## 2026-09-12 单屏下载首页
 
 首页仅保留横排图标＋WithYou、主题“与你同在／寻找同频的人”和 Windows／macOS／Linux 半透明平台入口。移除副标、介绍段落、故事锚点、活动列表与页脚，旧 `/prototype` 保留。尚无有效在线安装包链接，三平台使用 disabled 按钮并明确标注“即将开放”，不提供假下载。背景改用 `public/images/coastal-meadow-v2.png`，五位小人物采用不同颜色的 T 恤和夏装，三位女性，原构图保留。完整编辑提示词在 `artwork/coastal-meadow-prompt-v2.txt`。原生仍通过稳定资产名加载该版本。
